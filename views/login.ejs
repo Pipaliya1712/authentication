@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form method="post" action="/login">
+        <input type="email" placeholder="email" name="email" value="<%= locals.email %>" />
+        <input type="password" placeholder="password" name="password" />
+        <p class="error"> <%= locals.message %> </p>
+        <input type="submit" value="login" />
+    </form>
+    <form action="/register" method="get">
+        <button type="submit">register</button>
+    </form>
+</body> 
+</html>
